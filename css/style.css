@@ -11,6 +11,11 @@
     z-index: 1011; */
 }
 
+.upgrade{
+    background-color: #080B12;
+    height:60px;
+}
+
 footer{
     background-color: #282828;
     position:fixed;
