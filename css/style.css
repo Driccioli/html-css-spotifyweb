@@ -5,12 +5,18 @@
     height: 100vh;
 }
 
+.sidebar{
+    background-color: black;
+    /* position: fixed;
+    z-index: 1011; */
+}
+
 footer{
     background-color: #282828;
     position:fixed;
     align-self: flex-end;
-    height:70px;
-    min-height: 70px;
+    height:80px;
+    min-height: 80px;
     width:100%;
-    z-index: 1010;
+    z-index: 1110;
 }
