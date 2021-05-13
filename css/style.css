@@ -1,27 +1,41 @@
 .container-fluid{
-    display: flex;
-    background-color: #141922;
+    height:100vh;
+}
+
+.main-page{
     width:100%;
-    height: 100vh;
+    max-width:100%;
+    height: calc(100% - 70px);
+
+    font-family: sans-serif;
+    color:gray;
 }
 
-.sidebar{
-    background-color: black;
-    /* position: fixed;
-    z-index: 1011; */
-}
+    .sidebar{
+        background-color: black;
+        height:100%;
+    }
 
-.upgrade{
-    background-color: #080B12;
-    height:60px;
-}
+    .upgrade{
+        background-color: #080B12;
+        height: 70px;
+        width:100%;
+        max-width: 100%;
+        justify-content: flex-end;
+    }
+
+    .content{
+        width:100%;
+        height: calc(100% - 70px);
+        background-color: #141922;
+        overflow-y: scroll;
+    }
 
 footer{
     background-color: #282828;
+    height: 70px;
     position:fixed;
-    align-self: flex-end;
-    height:80px;
-    min-height: 80px;
+    z-index:1100;
+    bottom:0;
     width:100%;
-    z-index: 1110;
 }
