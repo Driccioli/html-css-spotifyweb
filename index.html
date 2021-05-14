@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool-responsive.css">
     <link rel="stylesheet" href="css/style.css">
     <link class="green-icon" rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -20,14 +21,40 @@
                     <div class="button">Effettua l'upgrade</div>
                 </div>
 
-                <div class="content">
-                    
+                <div class="content row">
+                    <div class="row menu">
+                        <span id="selected">In Evidenza </span>
+                        <span>Podcast </span>
+                        <span>Classifiche </span>
+                        <span>Generi e Mood </span>
+                        <span>Nuove Uscite </span>
+                        <span>Scopri </span>
+                    </div>
                 </div>
             </div>
         </div>
         <footer class="row">
-            <div class="current-track col-lg-2 col-xs-1"></div>
-            <div class="track-settings col-lg-8 col-xs-10"></div>
+            <div class="row current-track col-lg-2 col-xs-1">
+                <img src="img/sinister.jpeg" alt="Sinister album">
+                <div>
+                    <b>Sinister</b>
+                    <br>
+                    <a href="#">Brano Nome</a>
+                </div>
+                <div class="row s-b col-xs-3">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+            <div class="track-settings col-lg-8 col-xs-10">
+                <div class="row track-settings-buttons"></div>
+                <div class="row progress">
+                    <span>0:25</span>
+                    <div class="progress-bar">
+                        <div class="complete"></div>
+                    </div>
+                </div>
+            </div>
             <div class="other-settings col-lg-2 col-xs-1"></div>
         </footer>
     </div>
