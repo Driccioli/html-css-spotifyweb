@@ -61,7 +61,13 @@
         background-color: #141922;
         overflow-y: scroll;
         align-items: flex-start;
+        padding-left:20px;
     }
+
+        h1{
+            color: white;
+            width: 100%;
+        }
 
         .menu{
             margin-top:15px;
@@ -84,6 +90,77 @@
                 .menu > span#selected{
                     border-bottom: 3px solid rgb(135, 189, 35);
                 }
+        
+        .album-list{
+            margin-top: 20px;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+
+        .album{
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .album-pic{
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height:auto;
+            width:100%;
+            background-size:contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+
+            
+
+            .album-pic i{
+                filter: opacity(0);
+                color:white;
+                font-size:80px;
+                width: 82%;
+                line-height: 150px;
+            }
+
+            .album-pic:hover i{
+                background-color: rgba(0,0,0,0.5);
+                filter: opacity(1);
+            }
+
+            #heavy-metal{
+                background-image: url("../img/metal_lifting.jpg");
+            }
+
+            #stranger-things{
+                background-image: url("../img/stranger.jpeg");
+            }
+
+            #quiet-place{
+                background-image: url("../img/aquietplace.jpeg");
+            }
+
+            #split{
+                background-image: url("../img/split.jpeg");
+            }
+
+            #cure-wellness{
+                background-image: url("../img/cure.jpeg");
+            }
+
+            #sinister{
+                background-image: url("../img/sinister.jpeg");
+            }
+
+            #release-radar{
+                background-image: url("../img/radar.jpeg");
+            }
+
+            #daily-mix-1{
+                background-image: url("../img/mixdaily.jpeg");
+            }
 
 footer{
     background-color: #282828;
@@ -112,7 +189,7 @@ footer{
             max-height:40px;
         }
 
-        .current-track b{
+        b{
             font-size: 14px;
             color: white;
         }
