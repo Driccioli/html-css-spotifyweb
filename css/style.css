@@ -19,13 +19,41 @@
     .sidebar{
         background-color: black;
         height:100%;
-        padding: 10px;
+        padding: 10px 0 0 20px;
     }
 
         .sidebar > img{
             text-align: center;
             margin: auto;
             max-width:80%;
+        }
+
+        .sidebar ul{
+            margin-top:10px;
+            list-style-type: none;
+        }
+
+        .sidebar ul img{
+            max-width:25px;
+            fill:gray;
+        }
+
+        .sidebar li{
+            font-size:15px;
+            line-height:30px;
+        }
+
+        .sidebar li:first-child{
+            border-left: 2px solid greenyellow;
+        }
+
+        .sidebar li:hover{
+            color:white;
+            fill:white;
+        }
+
+        .scroll{
+            overflow-y: auto;
         }
 
     .upgrade{
