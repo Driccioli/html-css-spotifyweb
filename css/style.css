@@ -11,7 +11,7 @@
     width:100%;
     max-width:100%;
     height: calc(100% - 70px);
-
+    overflow:hidden;
     
     color:gray;
 }
@@ -57,9 +57,9 @@
 
     .content{
         width:100%;
-        height: calc(100% - 70px);
+        height: calc(100% - 460px);
         background-color: #141922;
-        overflow-y: scroll;
+        overflow-y: auto;
         align-items: flex-start;
         padding-left:20px;
     }
@@ -96,6 +96,7 @@
             width: 100%;
             justify-content: flex-start;
             align-items: baseline;
+            padding-bottom:20px;
         }
 
         .album{
@@ -160,6 +161,16 @@
 
             #daily-mix-1{
                 background-image: url("../img/mixdaily.jpeg");
+            }
+
+            #lana-del-rey{
+                background-image: url("../img/youg.jpeg");
+                border-radius: 50%;
+            }
+
+            #einaudi{
+                background-image: url("../img/einaudi.jpeg");
+                border-radius: 50%;
             }
 
 footer{
