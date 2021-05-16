@@ -18,8 +18,8 @@
 
     .sidebar{
         background-color: black;
-        height:100%;
-        padding: 10px 0 0 20px;
+        padding: 10px 10px 0 20px;
+        font-weight: bold;
     }
 
         .sidebar > img{
@@ -55,6 +55,19 @@
         .scroll{
             overflow-y: auto;
         }
+
+        .fa-plus-square{
+            font-size: 50px;
+        }
+
+        .profile{
+            line-height: 30px;
+        }
+
+            .profile img{
+                max-width: 20px;
+            }
+
 
     .upgrade{
         background-color: #080B12;
