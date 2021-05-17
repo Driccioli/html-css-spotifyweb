@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool-responsive.css">
     <link rel="stylesheet" href="css/style.css">
     <link class="green-icon" rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -15,7 +17,7 @@
         <div class="row main-page">
             <div class="sidebar col-lg-2 col-xs-1">
                 <img src="img/logo.svg" alt="Spotify logo">
-                <ul>
+                <ul id="menu">
                     <li><img src="img/home.svg" alt="Home"> Home</li>
                     <li><img src="img/search.svg" alt="Search"> Cerca</li>
                     <li><img src="img/libreria.svg" alt="Library"> La tua libreria</li>
@@ -58,45 +60,45 @@
                     </div>
                     <h1>Recently played</h1>
                     <div class="row album-list">
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="heavy-metal" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>Heavy Metal</b> <br>
-                            Bottom Text
+                            Various Artists
                         </div>
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="stranger-things" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>Stranger Things, Vol.1 (a Netflix Original Series soundtrack</b> <br>
                             Kyle Dixon & Michael Stein
                         </div>
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="quiet-place" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>A quiet place</b> <br>
-                            Bottom Text
+                            Marco Beltrami
                         </div>
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="split" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>Split</b> <br>
-                            Bottom Text
+                            West Thoroson
                         </div>
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="cure-wellness" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>A cure for wellness</b> <br>
-                            Bottom Text
+                            Benjamin Wallfisch
                         </div>
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="sinister" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>Sinister</b> <br>
-                            Bottom Text
+                            Christopher Young
                         </div>
                     </div>
                     <h1>Creato per John Doe</h1>
                     <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
                     <div class="row album-list">
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="release-radar" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>Release Radar</b>
                         </div>
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="daily-mix-1" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>Daily Mix 1</b>
                         </div>
@@ -104,11 +106,11 @@
                     <h1>Artisti più popolari</h1>
                     <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
                     <div class="row album-list">
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="lana-del-rey" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>Lana del Rey</b>
                         </div>
-                        <div class="album col-lg-2">
+                        <div class="album col-lg-2 col-md-3 col-sm-4 col-xs-6">
                             <div id="einaudi" class="album-pic"><i class="far fa-play-circle"></i></div>
                             <b>Ludovico Einaudi</b>
                         </div>
@@ -130,15 +132,29 @@
                 </div>
             </div>
             <div class="track-settings col-lg-8 col-xs-10">
-                <div class="row track-settings-buttons"></div>
+                <div class="row track-settings-buttons">
+                    <i class="fas fa-random"></i>
+                    <i id="back" class="fas fa-step-backward"></i>
+                    <i id="play" class="far fa-play-circle"></i>
+                    <i id="forward" class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
                 <div class="row progress">
                     <span>0:25</span>
-                    <div class="progress-bar">
+                    <div class="progress-bar col-lg-6">
                         <div class="complete"></div>
                     </div>
+                    <span>4:35</span>
                 </div>
             </div>
-            <div class="other-settings col-lg-2 col-xs-1"></div>
+            <div class="row other-settings col-lg-2 col-xs-1">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="progress-bar col-lg-4">
+                    <div class="complete"></div>
+                </div>
+            </div>
         </footer>
     </div>
     
