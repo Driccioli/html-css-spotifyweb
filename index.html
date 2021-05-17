@@ -15,19 +15,19 @@
 <body>
     <div class="container-fluid">
         <div class="row main-page">
-            <div class="sidebar col-lg-2 col-xs-2">
-                <img src="img/logo.svg" alt="Spotify logo">
+            <div class="sidebar">
+                <img class="logo-full" src="img/logo.svg" alt="Spotify logo">
+                <img class= "logo-mobile" src="img/logo-small.svg" alt="Spotify logo mobile">
                 <ul id="menu">
-                    <li><img src="img/home.svg" alt="Home"> Home</li>
-                    <li><img src="img/search.svg" alt="Search"> Cerca</li>
-                    <li><img src="img/libreria.svg" alt="Library"> La tua libreria</li>
+                    <li><img src="img/home.svg" alt="Home"> <span>Home</span></li>
+                    <li><img src="img/search.svg" alt="Search"> <span>Cerca</span></li>
+                    <li><img src="img/libreria.svg" alt="Library"> <span>La tua libreria</span></li>
                 </ul>
-                <b>PLAYLIST</b>
+                <span><b>PLAYLIST</b></span>
                 <br>
-                <i class="fas fa-plus-square"></i> Crea Playlist
-                <br>
+                <span><i class="fas fa-plus-square"></i></span>
                 <div class="scroll">
-                    <ul class="scroll">
+                    <ul>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
@@ -39,14 +39,14 @@
                 </div>
 
                 <div class="profile">
-                    <img src="img/download.svg" alt="Download"> Installa app
+                    <img src="img/download.svg" alt="Download"> <span>Installa app</span>
                     <br> <hr>
-                    <img src="img/profile.svg" alt="Profile pic"> <b>John Doe</b>
+                    <img src="img/profile.svg" alt="Profile pic"> <span><b>John Doe</b></span>
                 </div>
             </div>
             
 
-            <div class="page col-lg-10 col-xs-10">
+            <div class="page">
                 <div class="upgrade row">
                     <div class="button">Effettua l'upgrade</div>
                 </div>
@@ -123,7 +123,7 @@
         <footer class="row">
             <div class="row current-track col-lg-2 col-xs-3">
                 <img class="col-xs-1"src="img/sinister.jpeg" alt="Sinister album">
-                <div>
+                <div class="track-info">
                     <b>Sinister</b>
                     <br>
                     <a href="#">Brano Nome</a>
