@@ -231,7 +231,7 @@ footer{
 }
 
     footer > *{
-        border: 1px solid green;
+        /* border: 1px solid green; */
         height: 100%;
     }
 
@@ -310,7 +310,7 @@ footer{
     }
 
     .progress{
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: baseline;
     }
 
